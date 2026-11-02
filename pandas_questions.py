@@ -16,16 +16,16 @@ import matplotlib.pyplot as plt
 def load_data():
     """Load data from the CSV files referundum/regions/departments."""
     referendum = pd.read_csv(
-        "referendum.csv",
+        "data/referendum.csv",
         sep=";",
         dtype={"department code": str, "Town code": str},
     )
     regions = pd.read_csv(
-        "regions.csv",
+        "data/regions.csv",
         dtype={"code": str},
     )
     departments = pd.read_csv(
-        "departments.csv",
+        "data/departments.csv",
         dtype={"region_code": str, "code": str},
     )
 
