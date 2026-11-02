@@ -18,7 +18,7 @@ def load_data():
     referendum = pd.read_csv(
         "data/referendum.csv",
         sep=";",
-        dtype={"department code": str, "Town code": str},
+        dtype={"Department code": str, "Town code": str},
     )
     regions = pd.read_csv(
         "data/regions.csv",
