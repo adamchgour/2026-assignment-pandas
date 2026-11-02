@@ -55,7 +55,7 @@ def merge_regions_and_departments(regions, departments):
 def merge_referendum_and_areas(referendum, regions_and_departments):
     """Merge referendum results with their departments and regions."""
     referendum = referendum.rename(
-        columns={"department code": "code_dep"}
+        columns={"Department code": "code_dep"}
     )
     referendum = referendum.loc[
         ~referendum["code_dep"].str.contains("Z", na=False)
